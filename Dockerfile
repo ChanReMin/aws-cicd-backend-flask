@@ -1,17 +1,16 @@
 # ----- Base image -----
-#FROM python:3.11-slim AS base
-FROM public.ecr.aws/sam/build-python3.11 AS base
+FROM ghcr.io/chanremin/python:3.11-slim AS base
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1
 
-# RUN addgroup --system app && adduser --system --ingroup app app
+RUN addgroup --system app && adduser --system --ingroup app app
 WORKDIR /app
 
-# RUN apt-get update && \
-#     apt-get install -y --no-install-recommends curl && \
-#     rm -rf /var/lib/apt/lists/*
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends curl && \
+    rm -rf /var/lib/apt/lists/*
 
 # ----- Dependencies layer -----
 FROM base AS deps
