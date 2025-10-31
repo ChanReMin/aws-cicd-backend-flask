@@ -7,9 +7,9 @@ def create_app():
     def hello():
         return "456"
 
-    @app.get("/abc")
+    @app.get("/abcd")
     def hello123():
-        return "123"
+        return "12345"
     
     @app.get("/healthz")
     def healthz():
