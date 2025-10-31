@@ -5,7 +5,7 @@ def create_app():
 
     @app.get("/")
     def hello():
-        return "lo cc dogker !!"
+        return "123"
 
     @app.get("/healthz")
     def healthz():
