@@ -5,8 +5,12 @@ def create_app():
 
     @app.get("/")
     def hello():
-        return "123"
+        return "456"
 
+    @app.get("/abc")
+    def hello():
+        return "123"
+    
     @app.get("/healthz")
     def healthz():
         return jsonify(status="ok")
