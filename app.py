@@ -11,9 +11,9 @@ def create_app():
     def hello123():
         return "12345"
 
-    @app.get("/abcdee")
+    @app.get("/chungcock")
     def hello12333():
-        return "1234521"
+        return "i'm noob"
     
     @app.get("/healthz")
     def healthz():
