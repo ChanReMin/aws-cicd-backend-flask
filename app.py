@@ -10,6 +10,10 @@ def create_app():
     @app.get("/abcd")
     def hello123():
         return "12345"
+
+    @app.get("/abcdee")
+    def hello12333():
+        return "1234521"
     
     @app.get("/healthz")
     def healthz():
