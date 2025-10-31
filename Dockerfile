@@ -1,6 +1,6 @@
 # ----- Base image -----
 #FROM python:3.11-slim AS base
-FROM python:3.11 AS base
+FROM ghcr.io/python/python:3.11-slim AS base
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
