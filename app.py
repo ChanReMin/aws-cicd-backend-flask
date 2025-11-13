@@ -9,7 +9,7 @@ def create_app():
 
     @app.get("/abcd")
     def hello123():
-        return "123456789"
+        return "this is testing lambda invalidate"
 
     @app.get("/chungcock")
     def hello12333():
