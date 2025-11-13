@@ -13,7 +13,7 @@ def create_app():
 
     @app.get("/chungcock")
     def hello12333():
-        return "i'm noob and dog"
+        return "i'm noob and dog abcxyz"
     
     @app.get("/healthz")
     def healthz():
